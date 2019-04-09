@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:kongqw="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Control_getPic">
+
+
+
+
+   <!-- <Button
+        android:id="@+id/bn_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:textSize="20dp"
+        />-->
+
+    <ImageView
+        android:id="@+id/c_image_View"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        />
+    <!--android:layout_below="@id/bn_begin"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/log_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="155dp"
+            android:layout_marginBottom="53dp"
+            android:textSize="40dp"
+        />
+
+        <com.kongqw.rockerlibrary.view.RockerView
+            android:id="@+id/rockerView"
+            android:layout_width="137dp"
+            android:layout_height="112dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="19dp"
+            kongqw:areaBackground="@drawable/d1"
+            kongqw:rockerBackground="@drawable/d2"
+            kongqw:rockerRadius="30dp" />
+    </RelativeLayout>
+</RelativeLayout>
